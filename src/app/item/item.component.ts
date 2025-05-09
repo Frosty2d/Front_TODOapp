@@ -14,7 +14,7 @@ export class ItemComponent {
  @Output() modificaTarefa = new EventEmitter();
 }
  alternarStatus() {
-    this.tarefa.statusRealizada = !this.tarefa.statusRealizada;
-    this.modificaTarefa.emit(this.tarefa);
+    tarefa.statusRealizada = !tarefa.statusRealizada;
+    modificaTarefa.emit(this.tarefa);
   }
 }
