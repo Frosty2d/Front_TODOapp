@@ -17,7 +17,7 @@ export class ItemComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get<any[]>('https://SEU_BACKEND_RENDER/tarefas')
+    this.http.get<any[]>('https://back-todoapp-ge5j.onrender.com/tarefas')
       .subscribe(data => {
         this.tarefas = data;
       });
