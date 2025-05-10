@@ -3,29 +3,6 @@ import { Tarefa } from "./tarefa";
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
-
-@Component({
-  selector: 'app-item',
-  templateUrl: './item.component.html',
-  standalone: false,
-  styleUrl: './app.component.css'
-})
-
-export class ItemComponent implements OnInit {
-  tarefas: any[] = [];
-
-  constructor(private http: HttpClient) {}
-
-  ngOnInit() {
-    this.READ_tarefas();
-    this.http.get<any[]>('https://back-todoapp-ge5j.onrender.com/tarefas')
-      .subscribe(data => {
-        this.tarefas = data;
-        
-      });
-  }
-}
-
 export class AppComponent {
   title = 'TODOapp';
 
