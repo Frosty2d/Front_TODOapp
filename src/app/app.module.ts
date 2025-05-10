@@ -23,3 +23,11 @@ import { ProdutoComponent } from './produto/produto.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+import { HttpClientModule } from '@angular/common/http';
+
+@NgModule({
+  declarations: [ /* ... */ ],
+  imports: [ HttpClientModule /* ... */ ],
+  bootstrap: [ /* ... */ ]
+})
+export class AppModule { }
