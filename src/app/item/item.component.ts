@@ -13,4 +13,3 @@ export class ItemComponent {
  @Output() removeTarefa = new EventEmitter();
  @Output() modificaTarefa = new EventEmitter();
 }
-}
