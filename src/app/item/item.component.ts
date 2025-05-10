@@ -13,8 +13,4 @@ export class ItemComponent {
  @Output() removeTarefa = new EventEmitter();
  @Output() modificaTarefa = new EventEmitter();
 }
- alternarStatus() {
-    tarefa.statusRealizada = !tarefa.statusRealizada;
-    modificaTarefa.emit(this.tarefa);
-  }
 }
